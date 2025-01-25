@@ -1,0 +1,1548 @@
+/*  
+#7a00ff (Violet) dark
+#8500e0 (Deep Purple)
+#b347ff (Bright Purple)
+#cf72ff (Light Purple)
+#e591ff (Pinkish Purple)
+#ffabff (Soft Pink) light */
+
+/*Zenona Home*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+  
+html {
+    font-size: 85%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:/* #84013E*/ #730136 /* #640039* #A30069 /* #F2038A*/ /*#BA0158
+  /*  #A9014F*/
+   /* #960146
+   
+   /* 
+   /* #61002E
+   /* #4F0026
+   /* #3D001D
+   /* #2B0014
+   /* #1A000C*/;
+}
+/*Navigation*/
+ 
+/*Navigation------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #4F0026;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+    
+  header .logo {
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+  }
+  header .logo:hover{
+    color: #c56d8a;
+    transform: scale(1.35);
+  }
+  header .navbar {
+    display: flex;
+    align-items: center;
+  }
+    
+  header .navbar a {
+    font-size: 18px;
+    padding: 0 1.5rem;
+    color:  white;
+  }
+    
+  header .navbar a:hover {
+    color: #c56d8a; 
+    transform: scale(1.20);   
+  }
+        
+  header #toggler {
+    display: none;
+  }
+    
+  header .fa-bars {
+    font-size: 3rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+    color: white;
+  }
+/*Hero-Banner*/
+.zenova-home {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content:center; /* Aligns content to the left */
+    background: url(../img-used/g_7.jpg) no-repeat center center; /* Background image pixel.com */
+    background-size: cover; /* Make the background cover the section */
+    height: 100vh; /* Full-screen height */
+    padding: 0 50px; /* Horizontal padding for content */
+    box-sizing: border-box; /* Include padding in width calculations */
+    text-align: center; 
+    margin-top: 5%;        
+}
+
+/* Content Styling */
+.content-home {
+  max-width: 500px; /* Limit content width */
+  text-align: center;
+}
+  
+/* Heading */
+.content-home h3 {
+  font-size: 3rem; /* Large heading size */
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 0.5rem;
+  color: white; /* white text color */
+}
+    
+/* Paragraph Description */
+.content-home p {
+  font-size: 2rem; /* Normal paragraph font size */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 1.5rem;
+  color: white; /* Softer paragraph color */
+}
+  
+/* Button Styling */
+.content-home .btn-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e91e63; /* Pink button background */
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+  
+/* Button Hover Effect */
+.content-home .btn-home:hover {
+  background-color: #c2185b; /* Darker pink on hover */
+  transform: scale(1.05);
+}
+
+/*section 2 section*/
+.section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #730136; 
+    color: white; 
+}
+.head-con-1 {
+    max-width: 900px;
+    width: 400px;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    color: white;
+}
+.p-con-1 {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.p-1{
+    max-width: 200px;
+    flex: 1;
+    padding: 25px;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid white;
+    text-align: center;    
+}
+.p-1-1{
+    max-width: 400px;
+    flex: 1;
+    padding: 25px;
+    font-size: 2rem;
+    color: white;
+    border: 2px solid white;
+    text-align: center;    
+}
+
+  
+.img-box-1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+} 
+.img-box-1 img {
+    width: 500px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*section 3*/
+.p-box-1 {
+  text-align: center;
+  max-width: 1200px; /* Match the width of .main-box for alignment */
+  margin: 0 auto; /* Center the box horizontally */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #730136;
+}    
+.p-box-1 ol {
+  padding-left: 50px; /* Add padding to properly align ordered list */
+  margin: 10px 0;
+  max-width: 900px;
+  width: 90%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+/*---------section 6--------------------*/
+
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Default: 3 equal columns */
+    gap: 10px; /* Space between grid items */
+    padding: 5px;
+    
+}
+  
+.grid-item-1:hover img{
+    transform: scale(1.05);
+  }
+.grid-item-1 {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+  
+.grid-item-1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.grid-item-1 p {
+    font-size: 1rem;
+    color: white;
+    margin-top: 10px;
+}
+/*Zenova-about---------------------------------------*/
+.about-home::before{
+  content: "";
+  display: block;
+  background-position: center;
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content:center; /* Aligns content to the left */
+  background: url(../img-used/g_11.png) no-repeat center ; /* Background image from pixel */
+  background-size: cover; /* Make the background cover the section */
+  height: 600px; /* Full-screen height */
+  padding: 0 50px; /* Horizontal padding for content */
+  box-sizing: border-box; /* Include padding in width calculations */
+  width: 100%;
+  z-index: 0;     
+}
+/*section 2-------------------------*/
+.container-2 {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.section-3 {
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  color: white;
+}
+.section-3 img{
+  width: 300px;
+  height: 300px;
+  border: 0;
+}
+.section-3 img:hover{
+    transform: scale(1.1); /* Enlarges the image by 20% */
+    transition: transform 0.3s ease;  Smooth zoom effect 
+} 
+
+.section-3 iframe:hover{
+  transform: scale(1.1); /* Enlarges the image by 20% */
+  transition: transform 0.3s ease;  Smooth zoom effect 
+} 
+
+/*.section-3 img {
+  width: 40%; /* Adjusted to make more space for text */
+  /*height: auto;
+  border-radius: 8px;
+}*/
+
+.text-content-1 {
+  width: 60%; /* Matches image width adjustment */
+}
+
+.text-content-1 h2 {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.text-content-1 p {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+/*-------------------------Table---------------------*/
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  width: 20% auto;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  margin: auto;
+}
+th{
+  color: white;
+}
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid white;
+}
+
+thead {
+  background-color: #730136;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightcoral;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tfoot {
+  background-color:#730136;
+  color: white;
+}
+
+tfoot td {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+/*up*/
+/*Up coming games*/
+/*Hero-Banner*/
+.zenova-up {
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content:center; /* Aligns content to the left */
+  background: url(../img-used/her.jpg) no-repeat center center; /* Background image from pixel*/
+  background-size: cover; /* Make the background cover the section */
+  height: 100vh; /* Full-screen height */
+  padding: 0 50px; /* Horizontal padding for content */
+  box-sizing: border-box; /* Include padding in width calculations */
+  text-align: center; 
+  margin-top: 5%;        
+}
+
+/* Content Styling */
+.content-up {
+max-width: 500px; /* Limit content width */
+color: white; /* Text color */
+text-align: center;
+}
+
+/* Heading */
+.content-up h1 {
+font-size: 5rem; /* Large heading size */
+font-weight: bold; /* Bold heading */
+margin-bottom: 0.5rem;
+color: white; /* white text color */
+border:  2px solid white;
+padding: 30px;
+}
+
+.topic-1{
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif; 
+  color: white; 
+}
+
+.topic-to-1 {
+  max-width: 800px;
+  width: 90%;
+  border: 2px solid white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  padding: 10px;
+  line-height: 1.4;
+  color: white;
+}
+
+#content-up{
+  font-size: 3rem;
+  max-width: 700px;
+  color: white;
+}
+
+/* General Styles */
+.upcoming-games {
+text-align: center;
+padding: 20px;
+}
+
+.cards-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+}
+
+.card {
+position: relative;
+width: 150px;
+height: 200px;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/* Overlay for hover effect */
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7);
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+font-size: 16px;
+text-align: center;
+border-radius: 10px;
+}
+
+/* Show overlay on hover */
+.card:hover .overlay {
+opacity: 1;
+}
+
+
+/*grid*/
+
+.box {
+width: 500px; /* Full width of the grid column */
+height: 400px;
+border: 2px dotted white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 5px auto;
+padding: 0%;
+margin-top: 10px;
+}
+
+.left-box h2{ 
+  font-size: 3rem;
+  color: white;
+}
+
+.left-box{
+  font-size: 2rem;
+  color: white;
+}
+
+/*Console*/
+
+.zenova-console{
+display: flex;
+align-items: center; /* Vertically centers content */
+justify-content:center; /* Aligns content to the left */
+background: url(../img-used/purple.jpg) no-repeat center center; /* Background image from printrest.com*/
+background-size: cover; /* Make the background cover the section */
+height: 100vh; /* Full-screen height */
+padding: 0 50px; /* Horizontal padding for content */
+box-sizing: border-box; /* Include padding in width calculations */
+text-align: center; 
+margin-top: 100px;      
+}
+#id-p-1{
+font-size: 2.5rem;
+max-width: 500px;
+}
+
+/* General Grid Styles */
+
+/* Section Styles */
+.grid-body{
+display: grid;
+justify-items: center; /* Center items horizontally */
+align-items: center;
+margin: 0;
+padding: 0;
+}
+.product-grid {
+text-align: center; /* Center the heading and grid */
+background-color:  /*(Bright Purple)*/;
+
+}
+
+.product-grid h2 {
+font-size: 24px;
+margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Grid Container */
+.grid-container-3 {
+display: grid; /* Enable grid layout */
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10px; 
+padding: 10px;
+margin: 0 auto;
+justify-items: center; /* Center items horizontally */
+align-items: center; /* Center items vertically */
+}
+
+/* Grid Item Styles */
+.grid-item-3 {
+position: relative; /* Required for positioning the price overlay */
+width: 150px;
+height: 150px;
+padding: 5px;
+margin: 0;
+overflow: hidden; /* Ensure content doesn't overflow */
+margin-top: 10px;
+background-color: #b347ff /*(Bright Purple*/)
+
+}
+
+/* Product Image Styles */
+.grid-item-3 img {
+width: 100%; /* Image takes up full width of grid item */
+height: 100%; /* Ensure consistent height */
+object-fit: cover; /* Maintain aspect ratio and fill space */
+border-radius: 10px; /* Rounded corners */
+transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Hover Effect for Image */
+.grid-item-3:hover img {
+transform: scale(1.1); /* Zoom in slightly on hover */
+}
+
+/* Price Overlay */
+.price {
+position: absolute; /* Positioned relative to grid-item */
+bottom: 0; /* Align to the bottom of the item */
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+color: #fff; /* White text color for contrast */
+text-align: center; /* Center the text */
+padding: 10px 0; /* Padding for better readability */
+font-size: 14px; /* Slightly smaller font size */
+opacity: 0; /* Initially hidden */
+transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Show Price on Hover */
+.grid-item-3:hover .price {
+opacity: 1; /* Fully visible when hovered */
+}
+
+/*games page*/
+
+/*section 2---------------------------------------------------------*/
+.catagory{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 5%;
+margin-left: 10%;
+}
+.container-4{
+width: 45%;
+justify-content: center;
+}
+.container-to {
+max-width: 600px;
+width: 70%;
+border: 2px solid #000;
+text-align: center;
+font-size: 1.5rem;
+font-weight: bold;
+box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+margin-left: 40px;
+
+}
+
+.game-card {
+position: relative;
+width: 500px; /* Adjust width as needed */
+margin: 20px;
+justify-content: center;
+overflow: hidden;
+}
+
+.game-card img {
+width: 95%; 
+height: 95%;
+transition: transform 0.3s ease-in-out;
+background-position: center;
+display: block;
+}
+
+.game-card:hover img {
+transform: scale(1.1); /* Zoom in on hover */
+}
+
+.game-info {
+position: absolute;
+top: 0;
+left: 0;
+width: 87%;
+height: 80%;
+background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+color: #fff;
+padding: 20px;
+opacity: 0; /* Initially hidden */
+transform: translateY(-100%); /* Slide up initially */
+transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+align-items: center;
+justify-content: center;
+}
+
+.game-card:hover .game-info {
+opacity: 1; /* Show on hover */
+transform: translateY(0); /* Slide down on hover */
+}
+
+/*-----------------------faq page----------------*/
+.video-container{
+position: relative;
+width: 100%;
+height: 600px; /* Reduceing the height here */
+overflow: hidden;
+}
+.styled-video{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transform: translate(-50%, -50%);
+}
+
+.text-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 2rem;
+font-weight: bold;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+text-align: center;
+}
+/*--------------------------------------------------*/
+/* General body styling */
+
+/* Container for all FAQ items */
+.faq-container {
+max-width: 500px; /* Limit width for better readability */
+margin: auto; /* Center the container */
+margin-top: 10%;
+color: white;
+}
+
+/* Collapsible container styling */
+.collapsible {
+margin-bottom: 10px; /* Add space between each question */
+border: 1px solid pink; /* Light border around each item */
+border-radius: 5px; /* Slightly rounded corners */
+overflow: hidden; /* Prevent content overflow */
+background: pink; /*  background */
+}
+
+/* Hidden checkbox */
+.toggle {
+display: none; /* Completely hide the checkbox */
+}
+
+/* Header (label) styling */
+.header {
+display: block; /* Make the label behave like a block */
+padding: 15px; /* Add space inside the header */
+font-size: 40px; /* Font size */
+background:#A9014F;
+ 
+  #84013E
+  #730136 
+  #640039
+  #A30069 
+  #F2038A
+  #BA0158
+  #A9014F
+  #960146
+  #61002E
+  #4F0026
+  #3D001D
+  #2B0014
+  #1A000C
+cursor: pointer; /* Change cursor to pointer on hover */
+font-weight: bold; /* Bold text */
+border: 3px dashed white;
+transition: background 0.3s ease; /* Smooth background transition */
+border-style: dashed;
+height: 100px;
+}
+
+/* Change background color on hover */
+.header:hover {
+background: plum; /* Slightly darker grey on hover */
+}
+
+/* Collapsible content */
+.content {
+display: none; /* Initially hidden */
+padding: 15px; /* Add space inside the content */
+background: #fdfdfd; /* Slight off-white background */
+font-size: 14px; /* Slightly smaller font size for content */
+color: #333; /* Dark grey text for readability */
+border-style: dotted;
+}
+
+/* Show content when the checkbox is checked */
+.toggle:checked + .header + .content {
+display: block; /* Make content visible */
+}
+/**/
+.seco-box{
+max-width: 600px;
+margin: auto;
+}
+.form-box{
+display: flex;
+flex-direction: column;
+border: 2px solid white;
+font-size: 1.5rem;
+max-width: 600px; 
+padding: 5%;}
+
+.form-1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+
+.form-1 label {
+margin-bottom: 5px;
+font-size: 2.5rem;
+}
+
+.form-1 input {
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid black;
+border-radius: 3px;
+width: 90%;
+}
+
+.form-1 button {
+padding: 10px 15px;
+background-color: #F2038A;
+color: #fff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+font-size: 20px;
+}
+
+.form-1 button:hover {
+background-color: lightcoral;
+}
+
+/*-----Review Page---------------------------------------*/
+/*body*/
+/* Section Styling */
+
+
+.zenova-up-1{
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content:center; /* Aligns content to the left */
+  background: url(../img-used/g_5.png) no-repeat center center; /* Background image from printrest.com*/
+  background-size: cover; /* Make the background cover the section */
+  height: 100vh; /* Full-screen height */
+  padding: 0 50px; /* Horizontal padding for content */
+  box-sizing: border-box; /* Include padding in width calculations */
+  text-align: center; 
+  margin-top: 50px;      
+  }
+  
+/* Content Styling */
+.content {
+  max-width: 500px; /* Limit content width */
+  color: black; /* Text color */
+  text-align: center;
+}
+  
+  /* Heading */
+.content h3 {
+  font-size: 4rem; /* Large heading size */
+  font-weight: bold; /* Bold heading */
+  margin-bottom: 0.5rem;
+  color: white; /* white text color */
+  border: 3px solid white;
+  padding: 10px;
+}
+  
+  
+  /* Paragraph Description */
+.content p {
+  font-size: 3rem; /* Normal paragraph font size */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 1.5rem;
+  color:balck; /* Softer paragraph color */
+}
+
+
+/*-----------------------------------------*/
+.container{
+  padding: 2rem;
+  margin-top: 20px;
+  /*display: flex;*/
+  justify-content: center;
+  height: 100vh;
+}
+
+.slider-wrapper{
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.slider{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+  border-radius: 0.5rem;
+}
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover  ;
+  width: 700px;
+  background-size: cover;
+  float: left;
+  position: center;
+  justify-items: center;
+  background-position: top;
+
+}
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.slider-nav a{
+  width: 0.5rem;
+  height: o.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+/*-------------------------------------------------*/
+#test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.test-head{
+  letter-spacing: 1px;
+  max-width: 30px 0px;
+  padding:10px 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.test-head h1{
+  font-size: 4rem;
+  font-weight: 500;
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+
+}
+
+.test-head span{
+  font-size: 3rem;
+  color:white;
+  margin-bottom: 5%;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.test-box-con{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+
+}
+profile-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  justify-content: flex-start;
+  text-align: right;
+}
+.profile-img img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-fit: center;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.name-user strong{
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color:black;
+  font-size: 1.5rem;
+}
+
+/*.reviwes{
+  color: #f9d71c;
+
+}*/
+
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review-info{
+  font-size: 2.5rem;
+  color: #1d0707;
+}
+
+/*Games Page*/
+/*section 2---------------------------------------------------------*/
+  .catagory{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  /*  margin-top: 5%;
+    margin-left: 5%;*/
+  }
+  .container-1{
+    width: 45%;
+    justify-content: center;
+  
+  }
+  .container-to {
+    max-width: 600px;
+    width: 70%;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    margin-left: 40px;
+    
+  }
+  
+  .game-card {
+    position: relative;
+    width: 500px; /* Adjust width as needed */
+    margin: 20px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .game-card img {
+    width: 95%; /*500,400*/
+    height: 95%;
+    transition: transform 0.3s ease-in-out;
+    background-position: center;
+    display: block;
+  }
+  
+  .game-card:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  .game-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    color: #fff;
+    padding: 20px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-100%); /* Slide up initially */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-card:hover .game-info {
+    opacity: 1; /* Show on hover */
+    transform: translateY(0); /* Slide down on hover */
+  }
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: center; /* Center the footer content */
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-container {
+  box-sizing: border-box;
+  background-color:   #4F0026;
+      /*#A9014F    
+      #fff 
+      #84013E
+      #730136 
+      #640039
+      #A30069
+      #F2038A
+      #BA0158
+      #A9014F
+      #960146
+      #61002E
+      #4F0026
+      #3D001D
+      #2B0014
+      #1A000C;*/
+  padding: 5px;
+
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+  justify-content: space-between;
+  gap: 50px; /* Spacing between columns */
+  padding: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 30px;
+  position: relative;
+  font-family: "Poppins", serif;
+  text-align: center;
+}
+
+.footer-col h4::before {
+  content: '';
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  opacity: 0.7;
+  display: block;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.footer-col ul li a:hover {
+  opacity: 1;
+}
+
+.footer-col input {
+  border: none;
+  width: 100%;
+  height: 45px;
+  padding-left: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.footer-col .inputesubmit {
+  background-color: #e91e64;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-col .inputesubmit:hover {
+  background-color: #d01756;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 40px;
+}
+
+.social-icons i {
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: black;
+}
+
+.row-1 {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* media queries------------------------------------------*/
+@media (max-width: 991px) 
+{
+  html{
+    font-size: 70%;
+  }
+  
+  header .fa-bars{
+    display: block;
+  }
+/*Zenova-home*/
+  header .navbar {
+    position: absolute;
+    font-size: 10rem;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #730136;
+    color: white;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.5s ease;
+  }
+    
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+    
+  header .navbar a {
+    font-size: 16px;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;}
+  
+    /*Zenova-about*/
+  /* upcoming*/
+  /*console*/
+
+  .grid-container-3 {
+    grid-template-columns: 1fr 1fr 1fr;}
+
+  .catagory{
+    gap: 150px;
+    margin-right: 500px;
+    }
+  .container-to {
+    width: 400px;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 40px; 
+  }
+  /*review*/
+  .container{
+    height: 60vh;
+  }
+
+  
+}
+
+
+  
+  
+  
+@media (max-width: 768px) 
+{
+    html {
+      font-size: 50%;
+    }
+/*Zenova-home*/
+    header .navbar a {
+      font-size: 14px;
+    }
+    .img-box-1 img {
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .p-1{
+        width: 100%;
+        height: 100%;
+    }
+    /*Zenova-about*/
+    .section-2 {
+        grid-template-columns: 1fr;
+    }
+    .text-content-1 {
+      padding-right: 40px;
+    }
+    /* upcoming*/
+    .zenova-console{
+      margin-top: 0%;
+    }
+    .grid-container-3 {
+      grid-template-columns: 1fr 1fr ;
+    }
+    .game-info{
+      font-size: 2rem;
+    }
+    .game-card img {
+      width: 450px; 
+      height: 450px;
+    }
+    /*footer*/
+    .footer-row {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 30px;
+    }
+    /* .footer-col h4 {
+      font-size: 18px;
+    } */
+    .footer-col ul li a {
+      font-size: 14px;
+    }
+    .footer-col input {
+      height: 40px;
+    }
+    col-1{
+      font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 480px){
+    html {
+        font-size: 50%;
+    }
+/*Zenova-home*/
+    .header .navbar a {
+        font-size: 12px;
+      }
+    .p-1{
+        width: 400px;
+        height: 250px;
+    }
+      
+    .img-box-1 img {
+        width: 200px;
+        height: 200px;
+    }
+    .content-home{
+        font-size: 1.5rem;
+    }
+    .p-box-1 ol {
+      padding-left: 10px;
+    }
+    .p-con-1{
+      padding-right: 18%;
+    }
+    #img-box-1-n{
+        display: none;
+    }
+    #p-1-1{
+        margin-right: 50px;
+    }
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px; /* Space between grid items */
+        padding: 5px;
+    }
+    .grid-item-1 h1{
+      font-size: 2.5rem;
+    }
+            /*Zenova-about*/
+    .about-home::before{
+        width: 100%;
+        height: 400px;
+    }
+    .section-3 {
+        grid-template-columns: 1fr;*/
+    }
+    .section-3 img {
+        width: 300px; /* Adjusted to make more space for text */
+        height: 300px;
+    }
+    .table-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%; /* Allow table to use the full width of the container */
+        font-size: 14px; /* Reduce font size for better readability on small screens */
+    }
+
+    th, td {
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+        font-size: 14px;
+    }
+
+    tfoot td {
+        font-size: 14px;
+    }
+    /* upcoming*/
+    .content-up h1 {
+        font-size: 3rem; /* Large heading size */
+        padding: 30px;}
+
+    .box {
+      width: 300px; /* Full width of the grid column */
+      height: 400px;
+    }
+
+    .grid-item-3 {
+      width: 200px;
+      height: 200px;
+    }
+    .grid-container-3 {
+      grid-template-columns: 1fr ;
+    }
+    #an-hidden{
+      display: none;
+    }
+    #id-p-1{
+      width: 200px;
+    }
+    .game-info{
+      font-size: 1.5rem;
+    }
+
+    .container-3{
+      width: 200%;
+      justify-content: center;
+    
+    }
+    .container-to {
+      max-width: 100px;
+      width: 70%;
+      border: 2px solid #000;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+      margin-left: 40px;
+      
+    }
+    .catagory{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+  
+
+      /*review*/
+    .test-box-con{
+      width: 200px;
+    }
+    .profile{
+      gap: 10px;
+    }
+    #test{
+      margin-top: -550px;
+    }
+    /*footer*/
+
+    .footer-row {
+      grid-template-columns: 1fr; /* Single column */
+      gap: 20px;
+    }
+    .footer-col {
+      text-align: center; /* Center align all content */
+    }
+    .footer-col h4 {
+      font-size: 35px;
+    }
+    
+    .footer-col ul li a {
+      font-size: 2.5rem;
+    }
+    .footer-col input {
+      width: 100%;
+      height: 35px;
+    }
+    .social-icons {
+      font-size: 30px;
+    }
+    .header{
+      font-size: 3rem;
+      }
+     .content p{
+      font-size: 2rem;
+     }
+     .head-con-1{
+      width: 300px;
+     } 
+     .col-1 p{
+      font-size: 1.5rem;
+    }
+
+     /*review*/
+     .container{
+      height: 130vh;
+    }
+}
+
+
+
+
