@@ -21,6 +21,11 @@ html {
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+svg{
+    display: none;
+    visibility: hidden;
+}
+    
 body{
     margin: 0;
     padding: 0;
