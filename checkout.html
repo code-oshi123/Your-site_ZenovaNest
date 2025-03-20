@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenova-cheakout-page</title>
+    <link rel="stylesheet" href="./css/third.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="./img-used/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="index.html" class="logo">ZEVOVA NEST.</a>
+        
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./up.html">Upcomings</a>
+            <a href="./console.html">Tech Trove</a>
+            <a href="./games.html">Games</a>
+            <a href="./faq_1.html">FAQs</a>
+            <a href="./view.html">Reviews</a>
+            <a href="./shop.html">Shop</a>
+        </nav>
+      </header>
+
+      <section class="table">
+        <div class="table">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Quentity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="cheak_cart">
+            </tbody>
+            <tfoot>
+              <tr id="total_value">
+                <td colspan="4" id="totalPrice"><h3>Total Price: RS. <span id="totalPrice">0</span></h3></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    
+
+      <section class="section-cheak" >
+        <div class="container">
+          <form id="myForm">
+            <div class="row">
+              <div class="coloms">
+                <h3 class="title">Billing Address</h3>
+                <div class="input-box">
+                  <span>Full Name: </span>
+                  <input type="text" placeholder="Ashvin Jaya" name="" id="name" required>
+                </div>
+
+                <div class="input-box"> 
+                  <span>Full Adress: </span>
+                  <input type="text" placeholder="32/Flower Road,colombo" name="" id="add" required>
+                </div>
+
+                  <div class="flex">
+                    <div class="input-box">
+                      <span>District </span>
+                      <input type="text" placeholder="districs
+                      " name="" id="" required>
+                    </div>  
+
+                  <div class="input-box">
+                    <span>Phone</span>
+                    <input type="number" placeholder="0785632102" name="" id="phone" required>
+                  </div>
+  
+                  <div class="input-box">
+                    <span>Zip-code </span>
+                    <input type="number" placeholder="12345" name="" id="zip" required>
+                  </div>
+                </div>
+              </div>  
+
+              <div class="coloms">
+                <h3 class="title">Payments</h3>
+                <!-- <lable>pick one</lable> --> 
+                 
+              <input type="radio" id="c1" name="payment">
+              <lable for="c1" class="r_1">cash-on-dilivaryp</lable>
+              <input type="radio" id="c2" name="payment">
+              <lable for="c2" class="r_1">card</lable>
+
+                <div class="input-box">
+                  <span>Card Accsepted</span>
+                  <img src="./img-used/imgcards.png" alt="">
+                </div>
+                
+                <div class="input-box">
+                  <span>Card Number</span>
+                  <input type="number" placeholder="123 456 789" name="" id="acnumber" required> 
+                </div> 
+                
+                <div class="input-box">
+                  <span> CVC </span>
+                  <input type="number" placeholder="123" name="cvc" id="cvc" required>
+                  </div> 
+
+                <div class="flex">
+                  <div class="input-box">
+                    <span>Exp. Year</span>
+                    <input type="year" placeholder="2020
+                    " name="" id="year" required>
+                  </div>
+
+                <div class="input-box">
+                  <span>Exp.Month</span>
+                  <input type="text" placeholder="January" name="" id="month" required> 
+                </div>
+                </div>
+              </div>
+            </div>  
+            <button type="submit" class="btn" id="submit_btn">Pay</button>
+             
+          </form>
+
+        </div>
+
+      </section> 
+      </form>
+
+
+        
+    
+    
+    
+    
+    
+       <footer>
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Zenoova Nest</h4>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-col"  id="non">
+              <h4>games</h4>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./faq_1.html">faqs</a></li>
+                <li><a href="./view.html">reviews</a></li>
+              </ul>
+            </div>
+            <div class="footer-col" id="non">
+              <h4>products</h4>
+              <ul>
+                <li><a href="./up.html">upcoming</a></li>
+                <li><a href="./console.html">TechTrive</a></li>
+                <li><a href="./games.html">games</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col" id="non-1">
+              <h4>join us</h4>
+              <form action="">
+                <input type="text" placeholder="Enter your name" class="inputename">
+                <input type="text" placeholder="Enter your email" class="inputemail">
+                <input type="submit" value="submit" class="inputesubmit">
+    
+              </form>
+            </div>
+          </div> 
+          <hr>
+          <div class="row-1">
+            <div class="col-1">
+              <p> &#169; 2025 ZenovaNest.All Right Reserved. </p>
+            </div>   
+        </div>
+      </footer>
+    
+      <script src="./js/cheak.js" defer></script>
+    
+</body>
+</html>
