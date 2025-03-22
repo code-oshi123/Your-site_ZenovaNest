@@ -117,7 +117,7 @@ function sumbitt(){
 
 //Year 
     let exYear = parseInt(yearint.value);
-    alert(exYear); //entered one
+    // alert(exYear); //entered one
     
     let currantyear = new Date().getFullYear();
     // alert(currantyear); 2025
