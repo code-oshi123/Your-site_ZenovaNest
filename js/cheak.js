@@ -133,8 +133,11 @@ function sumbitt(){
       let currentMonth = monthNames[new Date().getMonth()];
     //   alert(currentMonth);
 
-    if (exYear < currantyear) {
-        // alert("caed valid!!!!!!");
+   if (exYear < currantyear) {
+        alert("card Invalid!!!!!!");
+        return
+    }else if (exYear > currantyear){
+        // alert("card valid!!!!!!");
     }else if (!monthNames.includes(lowermon)){
         alert("Month spllings are wrong or invalid!!!!");
         return
