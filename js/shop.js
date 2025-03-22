@@ -63,12 +63,16 @@ function removeItem(itemName) {
 }
 
 let btn2 = document.getElementById("b2");
-
-
+//cheakout
 function checkout() {
+    if (totalPrice == 0) {
+        alert("Your cart is empty!");
+        return;
+    }else{
         localStorage.setItem("cart", JSON.stringify(cart));
         localStorage.setItem("totalPrice", totalPrice);
         window.location.href = "./checkout.html";
+    }       
 }
 
 btn2.addEventListener("click",checkout);
@@ -76,12 +80,13 @@ btn2.addEventListener("click",checkout);
 
 // ** Save as Favorite **
 function saveFavoriteOrder() {
-    if (cart.length === 0) {
+    if (totalPrice == 0) {
         alert("Your cart is empty! Add items before saving as favorite.");
         return;
-    }
-    localStorage.setItem("favoriteOrder", JSON.stringify(cart));
-    alert("Favorite order saved successfully!");
+    }else{
+        localStorage.setItem("favoriteOrder", JSON.stringify(cart));
+        alert("Favorite order saved successfully!");
+    }   
 }
 
 document.getElementById("b1").addEventListener("click" , saveFavoriteOrder);
