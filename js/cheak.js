@@ -133,17 +133,21 @@ function sumbitt(){
       let currentMonth = monthNames[new Date().getMonth()];
     //   alert(currentMonth);
 
-    if (exYear <= currantyear) {
-        alert("caed expired!!!!!!");
-        return 
+    if (exYear < currantyear) {
+        // alert("caed valid!!!!!!");
     }else if (!monthNames.includes(lowermon)){
         alert("Month spllings are wrong or invalid!!!!");
-        return 
-    }else if (monthNames === currentMonth){
+        return
+    }else if (lowermon == currentMonth){
         alert("Card is expired!!!!!!!!!!");
-        return 
+        return
+    }else if (lowermon < currentMonth){
+        alert("Card is expired!!!!!!!!!!");
+        return
+    }else{
+        // alert("Card is valid!!!!!!!!!!");
     }
-
+    
     let deliveryDate = new Date();
     deliveryDate.setDate(deliveryDate.getDate() + 3);
 
