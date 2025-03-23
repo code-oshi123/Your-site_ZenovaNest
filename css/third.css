@@ -99,6 +99,10 @@ body{
     height: 100%;
     margin-bottom: -300px;
 }
+.div_1 .topic{
+    color: #ffffff;
+    font-size: 30px;
+  }
     /* Section Styles */
 .grid-body{
     display: grid;
