@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let addButtons = document.querySelectorAll(".add-button"); // Select all "Add" buttons
+let addButtons = document.querySelectorAll(".add-button"); // Select all "Add" buttons
 
-    addButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            addToCart(button); // Call addToCart function when clicked
+addButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        addToCart(button); // Call addToCart function when clicked
+
         });
     });
-});
+
 
 let cart = {}; // store items
 let totalPrice = 0; // to store total price
@@ -31,10 +31,12 @@ function updateCart() {
     cartTable.innerHTML = ""; // Clear clear old things
     totalPrice = 0; // Update total price
 
+    
+
     Object.keys(cart).forEach(itemName => { 
         let item = cart[itemName];
         totalPrice += item.price * item.quantity; // Calculate total price
-
+        
         let row = `<tr>
                     <td>${itemName}</td>
                     <td><input type="number" value="${item.quantity}" min="1" onchange="updateQuantity('${itemName}', this.value)"></td>
@@ -49,12 +51,14 @@ function updateCart() {
 
 function updateQuantity(itemName, newQuantity) {
     newQuantity = parseInt(newQuantity);
-    if (newQuantity < 1) {
+    if (newQuantity > 1) {
+        cart[itemName].quantity = newQuantity; // Update quantity
+        updateCart(); // Refresh cart
+    }else{
         removeItem(itemName); // Remove item if quantity is 0
+        alert("invalid input")
         return;
     }
-    cart[itemName].quantity = newQuantity; // Update quantity
-    updateCart(); // Refresh cart
 }
 
 function removeItem(itemName) {
@@ -63,6 +67,7 @@ function removeItem(itemName) {
 }
 
 let btn2 = document.getElementById("b2");
+
 //cheakout
 function checkout() {
     if (totalPrice == 0) {
@@ -105,3 +110,6 @@ function loadFavoriteOrder() {
      updateCart();
 }
 document.getElementById("b3").addEventListener("click" , loadFavoriteOrder);
+
+
+
