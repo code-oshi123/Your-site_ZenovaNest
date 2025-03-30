@@ -94,16 +94,21 @@ body{
     color: #c56d8a;
     transform: scale(1.20);
 }
-  /* Body */
-.div_1{
+  /* Body */  
+  .div_1{
     height: 100%;
     margin-bottom: -300px;
-}
-.div_1 .topic{
+    
+  }
+  .div_1 .topic{
     color: #ffffff;
     font-size: 30px;
   }
+
     /* Section Styles */
+    .new{
+      background-color: white;
+    }
 .grid-body{
     display: grid;
     justify-items: center; /* Center items horizontally */
@@ -123,9 +128,9 @@ body{
     /* Grid Container */
     .grid-container-3 {
     display: grid; /* Enable grid layout */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 50px; 
-    padding: 50px;
+    padding: 100px;
     /* justify-items: center; Center items horizontally */
     align-items: center; /* Center items vertically */
     }
@@ -138,8 +143,6 @@ body{
     margin: 0;
     overflow: hidden; /* Ensure content doesn't overflow */
     margin-top: 10px;
-    background-color: #b347ff /*(Bright Purple)*/
-    
     }
     
     /* Product Image Styles */
