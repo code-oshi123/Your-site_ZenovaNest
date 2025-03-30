@@ -52,18 +52,18 @@ toggleCardDetails();
 
 function sub_2(){
     let name_1 = names.value;
-    if (name_1 == " "){
+    if (name_1 == ""){
         alert("enter your name!!");
         return
     }
     let add_1 = adds.value;
-    if (add_1 == " "){
+    if (add_1 == ""){
         alert("enter your address!!");
         return
     }
 
     let dis_int = dis_in.value;
-    if (dis_int == " "){
+    if (dis_int == ""){
         alert("enter your distric!!");
         return
     }
@@ -117,18 +117,18 @@ function sumbitt(){
     // }
 
     let name_2 = names.value;
-    if (name_2 == " "){
+    if (name_2 == ""){
         alert("enter your name!!");
         return
     }
     let add_2 = adds.value;
-    if (add_2 == " "){
+    if (add_2 == ""){
         alert("enter your address!!");
         return
     }
 
     let dis_int_1 = dis_in.value;
-    if (dis_int_1 == " "){
+    if (dis_int_1 == ""){
         alert("enter your distric!!");
         return
     }
