@@ -29,6 +29,7 @@
         </nav>
       </header>
 
+      <br><br><br><br>
       <section class="table">
         <div class="table">
           <table border="1">
@@ -57,7 +58,7 @@
             <div class="row">
               <div class="coloms">
                 <h3 class="title">Billing Address</h3>
-                <div class="input-box">
+                <div class="input-box ">
                   <span>Full Name: </span>
                   <input type="text" placeholder="Ashvin Jaya" name="" id="name" required>
                 </div>
@@ -71,61 +72,58 @@
                     <div class="input-box">
                       <span>District </span>
                       <input type="text" placeholder="districs
-                      " name="" id="" required>
+                      " name="" id="dis" required>
                     </div>  
 
                   <div class="input-box">
                     <span>Phone</span>
                     <input type="number" placeholder="0785632102" name="" id="phone" required>
-                  </div>
+                  </div> 
   
                   <div class="input-box">
                     <span>Zip-code </span>
                     <input type="number" placeholder="12345" name="" id="zip" required>
                   </div>
                 </div>
-              </div>  
+              </div>
 
               <div class="coloms">
                 <h3 class="title">Payments</h3>
-                <!-- <lable>pick one</lable> --> 
-                 
-              <input type="radio" id="c1" name="payment">
-              <lable for="c1" class="r_1">cash-on-dilivaryp</lable>
-              <input type="radio" id="c2" name="payment">
-              <lable for="c2" class="r_1">card</lable>
+                <input type="radio" id="c1" name="payment">
+                <lable for="c1" class="r_1">cash-on-dilivary</lable>
+                <input type="radio" id="c2" name="payment">
+                <lable for="c2" class="r_1">card</lable>
 
-                <div class="input-box">
+                <div class="input-box card-info">
                   <span>Card Accsepted</span>
                   <img src="./img-used/imgcards.png" alt="">
                 </div>
                 
-                <div class="input-box">
+                <div class="input-box card-info">
                   <span>Card Number</span>
                   <input type="number" placeholder="123 456 789" name="" id="acnumber" required> 
                 </div> 
                 
-                <div class="input-box">
+                <div class="input-box card-info">
                   <span> CVC </span>
                   <input type="number" placeholder="123" name="cvc" id="cvc" required>
-                  </div> 
+                  </div>  
 
                 <div class="flex">
-                  <div class="input-box">
+                  <div class="input-box card-info">
                     <span>Exp. Year</span>
-                    <input type="year" placeholder="2020
+                    <input type="number" placeholder="2020
                     " name="" id="year" required>
-                  </div>
+                  </div> 
 
-                <div class="input-box">
-                  <span>Exp.Month</span>
-                  <input type="text" placeholder="January" name="" id="month" required> 
-                </div>
-                </div>
+                  <div class="input-box card-info" >
+                    <span>Exp.Month</span>
+                    <input type="text" placeholder="January" name="" id="month" required>  
+                </div> 
+                </div> 
               </div>
             </div>  
-            <button type="submit" class="btn" id="submit_btn">Pay</button>
-             
+            <button type="submit" class="btn" id="submit_btn">Pay</button> 
           </form>
 
         </div>
