@@ -22,7 +22,6 @@ let orderSummary = document.getElementById('cheak_cart');
 
     // Convert object into an array and loop over it
 Object.keys(cart).forEach(itemName => {
-
     let item = cart[itemName];
 
     let row = `<tr>
@@ -46,7 +45,6 @@ function toggleCardDetails() {
             submit.addEventListener("click" , sumbitt);
         }
     }
-
 cashOnDelivery.addEventListener("change", toggleCardDetails);
 cardPayment.addEventListener("change", toggleCardDetails);
 toggleCardDetails();
