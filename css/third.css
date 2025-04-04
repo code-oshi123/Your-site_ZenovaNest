@@ -1,10 +1,19 @@
-/*  
-#7a00ff (Violet) dark
-#8500e0 (Deep Purple)
-#b347ff (Bright Purple)
-#cf72ff (Light Purple)
-#e591ff (Pinkish Purple)
-#ffabff (Soft Pink) light */
+:root {
+  --primary: #7a00ff; /* Violet - dark */
+  --secondary: #8500e0; /* Deep Purple */
+  --accent: #b347ff; /* Bright Purple */
+  --light-accent: #cf72ff; /* Light Purple */
+  --very-light-accent: #e591ff; /* Pinkish Purple */
+  --lightest: #ffabff; /* Soft Pink - light */
+  --dark: #2a0033; /* Darkened for better contrast */
+  --light: #faf5ff; /* Very light purple-white */
+  --success: #28a745;
+  --warning: #ffc107;
+  --dark-text: #333;
+  --light-text: #f8f9fa;
+  --gray: #6c757d;
+  --light-gray: #e9ecef;
+}
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -105,10 +114,16 @@ body{
     font-size: 30px;
   }
 
+  
+
     /* Section Styles */
-.new{
-      background-color: white;
+
+    .new{
+      background-color: rgb(201, 170, 170);
+      font-size: 30px;
+      color: #2a0033;
     }
+
 .grid-body{
     display: grid;
     justify-items: center; /* Center items horizontally */
@@ -116,10 +131,10 @@ body{
     margin: 0;
     padding: 0;
 }
+
 .product-grid {
-    text-align: center; /* Center the heading and grid */
-}
-    
+  text-align: center; /* Center the heading and grid */
+}   
 .product-grid h2 {
     font-size: 24px;
     margin-bottom: 20px; /* Add space below the heading */
@@ -127,64 +142,116 @@ body{
     
     /* Grid Container */
     .grid-container-3 {
-    display: grid; /* Enable grid layout */
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    gap: 50px; 
-    padding: 100px;
-    /* justify-items: center; Center items horizontally */
-    align-items: center; /* Center items vertically */
-    }
+      display: grid; /* Enable grid layout */
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      gap: 50px; 
+      padding: 100px;
+      /* justify-items: center; Center items horizontally */
+      align-items: center; /* Center items vertically */
+      }
 
     /* Grid Item Styles */
     .grid-item-3 {
     position: relative; /* Required for positioning the price overlay */
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 0;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    /* overflow: hidden; Ensure content doesn't overflow */
     margin-top: 10px;
+    margin-bottom: 10px;
     }
     
     /* Product Image Styles */
     .grid-item-3 img {
-    width: 100%; /* Image takes up full width of grid item */
+    width: 75%; /* Image takes up full width of grid item */
     height: 100%; /* Ensure consistent height */
     object-fit: cover; /* Maintain aspect ratio and fill space */
-    border-radius: 10px; /* Rounded corners */
-    transition: transform 0.3s ease; /* Smooth zoom effect */
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+    margin-left: 30px;
     }
-    
-    /* Hover Effect for Image */
+
     .grid-item-3:hover img {
     transform: scale(1.1); /* Zoom in slightly on hover */
     }
-.price_1{
-    color: black;
-    background: white;
+
+    .product-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+  }
+  .price_1{
+    padding: 1.5rem;
+    justify-items: center;
+  }
+  .price_1 h1 {
     font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
 }
 
-.button_div{
-  /* width: 100%; */
-  /* overflow-x: auto;
-  margin: auto; */
+.price_1 p {
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+.price_1 .price {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.button_div {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.button_div .btn_1 {
+  width: auto;
+  padding: 0.8rem 2rem;
+} 
+
+.btn_1 {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 50%;
+  display: block;
   text-align: center;
-  font-size: 100px;
-}
-.btn_1{
-    background-color: #4F0026;
-    color: white;
-    font-size: 20px;
-    /* margin-left: 20px; */
-    border:solid 2px white;
 }
 
-.btn_2{
-    background-color: #e91e64;
+.btn_1:hover {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(133, 0, 224, 0.4);
 }
+
+#b1 {
+  background: linear-gradient(to right, var(--light-accent), var(--accent));
+
+}
+
+#b2 {
+  background: linear-gradient(to right, var(--success), #5cb85c);
+}
+
+#b3 {
+  background: linear-gradient(to right, var(--warning), #f0ad4e);
+}
+
 .qun_1{
   background-color: plum;
 }
+
 /*-------------------------Table---------------------*/
 .table-container {
     width: 100%;
