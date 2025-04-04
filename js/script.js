@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCart(); // Display cart on load
 
   // Fetch data from the JSON file
-  fetch("products.json")
+  fetch("./products.json")
       .then(response => response.json())
       .then(data => {
           // Load products into respective sections
