@@ -3,39 +3,37 @@ let addButtons = document.querySelectorAll(".add-button"); // Select all "Add" b
 addButtons.forEach(button => {
     button.addEventListener("click", function () {
         addToCart(button); // Call addToCart function when clicked
-
-        });
     });
+});
 
+// Load cart from localStorage
+let cart = JSON.parse(localStorage.getItem("cart")) || {}; // Retrieve stored items
+let totalprice = parseFloat(localStorage.getItem("totalprice")) || 0; // Retrieve total price
 
-let cart = {}; // store items
-let totalPrice = 0; // to store total price
+updateCart(); // Ensure cart is loaded on page refresh
 
 function addToCart(button) {
-    let productElement = button.parentElement; //select the div
-    let itemName = productElement.dataset.name; // product name
-    let itemPrice = parseFloat(productElement.dataset.price); // Get price
+    let productElement = button.parentElement; // Select the div
+    let itemName = productElement.dataset.name; // Product name
+    let itemprice = parseFloat(productElement.dataset.price); // Get price
 
     if (cart[itemName]) {
-        cart[itemName].quantity += 1; //if item alreeady in the cart
+        cart[itemName].quantity += 1; // If item already in the cart
     } else {
-        cart[itemName] = { price: itemPrice, quantity: 1 }; //Add new onces
+        cart[itemName] = { price: itemprice, quantity: 1 }; // Add new ones
     }
 
-    updateCart(); //to add details to cart
+    updateCart(); // Update cart and save to localStorage
 }
 
-
 function updateCart() {
-    let cartTable = document.getElementById('cart'); //Table body
-    cartTable.innerHTML = ""; // Clear clear old things
-    totalPrice = 0; // Update total price
-
-    
+    let cartTable = document.getElementById('cart'); // Table body
+    cartTable.innerHTML = ""; // Clear old items
+    totalprice = 0; // Reset total price
 
     Object.keys(cart).forEach(itemName => { 
         let item = cart[itemName];
-        totalPrice += item.price * item.quantity; // Calculate total price
+        totalprice += item.price * item.quantity; // Calculate total price
         
         let row = `<tr>
                     <td>${itemName}</td>
@@ -46,18 +44,21 @@ function updateCart() {
         cartTable.innerHTML += row; // Append row to cart table
     });
 
-    document.getElementById('totalPrice').innerText = totalPrice; // 
+    document.getElementById('totalprice').innerText = totalprice; // Update total price display
+
+    // ** Store cart and total price in localStorage to persist after refresh **
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("totalprice", totalprice);
 }
 
 function updateQuantity(itemName, newQuantity) {
     newQuantity = parseInt(newQuantity);
-    if (newQuantity > 1) {
+    if (newQuantity > 0) {
         cart[itemName].quantity = newQuantity; // Update quantity
         updateCart(); // Refresh cart
-    }else{
+    } else {
         removeItem(itemName); // Remove item if quantity is 0
-        alert("invalid input")
-        return;
+        alert("Invalid input");
     }
 }
 
@@ -68,33 +69,32 @@ function removeItem(itemName) {
 
 let btn2 = document.getElementById("b2");
 
-//cheakout
+// Checkout function
 function checkout() {
-    if (totalPrice == 0) {
+    if (totalprice === 0) {
         alert("Your cart is empty!");
         return;
-    }else{
+    } else {
         localStorage.setItem("cart", JSON.stringify(cart));
-        localStorage.setItem("totalPrice", totalPrice);
+        localStorage.setItem("totalprice", totalprice);
         window.location.href = "./checkout.html";
     }       
 }
 
-btn2.addEventListener("click",checkout);
-
+btn2.addEventListener("click", checkout);
 
 // ** Save as Favorite **
 function saveFavoriteOrder() {
-    if (totalPrice == 0) {
+    if (totalprice === 0) {
         alert("Your cart is empty! Add items before saving as favorite.");
         return;
-    }else{
+    } else {
         localStorage.setItem("favoriteOrder", JSON.stringify(cart));
         alert("Favorite order saved successfully!");
     }   
 }
 
-document.getElementById("b1").addEventListener("click" , saveFavoriteOrder);
+document.getElementById("b1").addEventListener("click", saveFavoriteOrder);
 
 // ** Apply Favorite Order **
 function loadFavoriteOrder() {
@@ -102,14 +102,9 @@ function loadFavoriteOrder() {
     if (favoriteOrder) {
         cart = JSON.parse(favoriteOrder);
         updateCart();
-     }else{
+    } else {
         alert("No favorite order found. Please save one first.");
-     }
-
-     cart = JSON.parse(favoriteOrder);
-     updateCart();
+    }
 }
-document.getElementById("b3").addEventListener("click" , loadFavoriteOrder);
 
-
-
+document.getElementById("b3").addEventListener("click", loadFavoriteOrder);
