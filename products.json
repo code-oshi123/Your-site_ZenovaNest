@@ -1,0 +1,42 @@
+{
+  "processors": [
+    { "name": "Intel i5", "price": 3000, "image": "./img-used/i5.jpg" },
+    { "name": "Intel i6", "price": 2000, "image": "./img-used/i6.jpg" },
+    { "name": "Intel i7", "price": 4000, "image": "./img-used/i7.jpg" },
+    { "name": "Intel i9", "price": 5000, "image": "./img-used/i9.jpg" },
+    { "name": "AMD Ryzen 5", "price": 6000, "image": "./img-used/rizen_1.jpg" },
+    { "name": "Intel i5", "price": 8000, "image": "./img-used/i5.jpg" }
+  ],
+  "graphics": [
+    { "name": "GeForce GTX ", "price": 60000, "image": "./img-used/GeForce_GTX.jpg" },
+    { "name": "Nvidia Titan", "price": 75000, "image": "./img-used/Nvidia_Titan.jpg" },
+    { "name": "Radeon HD", "price": 90000, "image": "./img-used/Radeon_HD.jpg" },
+    { "name": "Radeon RX", "price": 20000, "image": "./img-used/Radeon_RX.jpg" },
+    { "name": "Intel Arc", "price": 75000, "image": "./img-used/Intel_Arc.jpg" },
+    { "name": "Radeon RX ", "price": 85000, "image": "./img-used/Radeon_RX1.jpg" }
+
+  ],
+  "motherboard": [
+    { "name": "AT Motherboard", "price": 4000, "image": "./img-used/AT.jpg" },
+    { "name": "AT Motherboard", "price": 8000, "image": "./img-used/at1.jpg" },
+    { "name": "ATX Motherboard ", "price": 12000, "image": "./img-used/ATX.jpg" },
+    { "name": "MicroATX", "price": 96000, "image": "./img-used/MicroATX.jpg" },
+    { "name": "Mini-ITX", "price": 54000, "image": "./img-used/Mini-ITX.jpg" },
+    { "name": "Mini-ITX", "price": 97000, "image": "./img-used/MicroATX.jpg" }
+  ],
+  "memory": [
+    { "name": "G-Skill-RAM", "price": 77000, "image": "./img-used/G-Skill.webp" },
+    { "name": "Corsair-RAM", "price": 100000, "image": "./img-used/Corsair.webp" },
+    { "name": "Kingston-RAM", "price": 78000, "image": "./img-used/Kingston.webp" },
+    { "name": "Patriot-RAM", "price": 92000, "image": "./img-used/Patriot-RAM.webp" }
+  ],
+  "Storage": [
+    { "name": "WD-Blue-SSD", "price": 89000, "image": "./img-used/WD-Blue.jpg" },
+    { "name": "Seagate-HDD", "price": 200000, "image": "./img-used/Seagate.jpg" },
+    { "name": "Western-Digital-SDD", "price": 63000, "image": "./img-used/Western-Digital.jpg" },
+    { "name": "Sandisk", "price": 23000, "image": "./img-used/Sandisk.jpg" },
+    { "name": "Crucial", "price": 76000, "image": "./img-used/Crucial.jpg" },
+    { "name": "Samsung NVMe SSD", "price": 92000, "image": "./img-used/Samsung.jpg" }
+
+  ]
+}
