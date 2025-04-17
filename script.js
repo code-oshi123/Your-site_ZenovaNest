@@ -116,7 +116,7 @@ function updateQuantity(itemName, newQuantity) {
     cart[itemName].quantity = newQuantity; // Update quantity
     updateCart(); // Refresh cart
 } else {
-    removeItem(itemName); // Remove item if quantity is 0
+    //removeItem(itemName); // Remove item if quantity is 0
     alert("Invalid input");
 }
 
