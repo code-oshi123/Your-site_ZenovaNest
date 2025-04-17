@@ -14,9 +14,9 @@ let deliveryDate = new Date();
 deliveryDate.setDate(deliveryDate.getDate() + 3);
     
 let cart = JSON.parse(localStorage.getItem("cart")) || {};
-let total = localStorage.getItem("totalPrice") || 0;
+let total = localStorage.getItem("totalprice") || 0;
 
-document.getElementById("totalPrice").innerText = "Total is: RS. " + total;
+document.getElementById("totalprice").innerText = "Total is: RS. " + total;
 
 let orderSummary = document.getElementById('cheak_cart');
 
