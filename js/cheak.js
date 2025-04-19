@@ -229,7 +229,6 @@ function sumbitt(){
 
     alert(`Thank you, ${name_2}, for your card payment purchase! Your order will be delivered to ${add_2} on ${deliveryDate.toDateString()}.`);
 
-    document.getElementById("myForm").submit(); 
 }
 // submit.addEventListener("click" , sumbitt);
 
