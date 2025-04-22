@@ -73,47 +73,35 @@ phoneint.addEventListener('input', function () {
     }
     });
       
-    cardint.addEventListener('input', function () {
+cardint.addEventListener('input', function () {
+// Remove all non-digit characters
+this.value = this.value.replace(/\D/g, '');
+
+// Enforce max 16 digits just in case
+if (this.value.length > 16) {
+    this.value = this.value.slice(0, 16);
+}
+});
+    
+zipint.addEventListener('input', function () {
     // Remove all non-digit characters
     this.value = this.value.replace(/\D/g, '');
-    
+  
     // Enforce max 16 digits just in case
-    if (this.value.length > 16) {
-        this.value = this.value.slice(0, 16);
+    if (this.value.length > 10) {
+      this.value = this.value.slice(0, 10);
     }
-    });
+  });
     
-    zipint.addEventListener('input', function () {
-        // Remove all non-digit characters
-        this.value = this.value.replace(/\D/g, '');
-      
-        // Enforce max 16 digits just in case
-        if (this.value.length > 10) {
-          this.value = this.value.slice(0, 10);
-        }
-      });
-    
-    cvcint.addEventListener('input', function () {
-        // Remove all non-digit characters
-        this.value = this.value.replace(/\D/g, '');
-      
-        // Enforce max 16 digits just in case
-        if (this.value.length > 10) {
-          this.value = this.value.slice(0, 10);
-        }
-      });
-
-// submit.addEventListener("click", function (e) {
-//     e.preventDefault();
-
-//     if (cashOnDelivery.checked) {
-//         sub_2();
-//     } else if (cardPayment.checked) {
-//         sumbitt();
-//     } else {
-//         alert("Please select a payment method!");
-//     }
-// });
+cvcint.addEventListener('input', function () {
+    // Remove all non-digit characters
+    this.value = this.value.replace(/\D/g, '');
+  
+    // Enforce max 16 digits just in case
+    if (this.value.length > 10) {
+      this.value = this.value.slice(0, 10);
+    }
+  });
 
 function sub_2(){
     let name_1 = names.value;
@@ -170,16 +158,6 @@ function sub_2(){
 }
 
 function sumbitt(){  
-    // let fileds = document.querySelectorAll("#myForm input");
-    
-    // for (let filed of fileds){
-    //     if (filed.value.trim() === ""){
-    //         alert(`Place enter ${filed.placeholder}`)
-    //         filed.focus();
-    //         return;
-    //     }
-    // }
-
     let name_2 = names.value;
     if (name_2 == ""){
         alert("enter your name!!");
