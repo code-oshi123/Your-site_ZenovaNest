@@ -108,7 +108,7 @@ function sub_2(){
     let name_2 = names.value.trim();
 
     if (!/^[A-Za-z\s]+$/.test(name_2)) {
-        alert("Name can only contain letters and spaces!");
+        alert("Enter name correctly(letters only)");
         return;
     }
 
@@ -121,7 +121,7 @@ function sub_2(){
     let dis_int_2 = dis_in.value.trim();
 
     if (!/^[A-Za-z\s]+$/.test(dis_int_2)) {
-        alert("Distric can only contain letters and spaces!");
+        alert("Enter distric correctly(letters only)");
         return;
     }
 
