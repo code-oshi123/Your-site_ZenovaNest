@@ -166,7 +166,7 @@ function sumbitt(){
     let name_2_i = names.value.trim();
 
     if (!/^[A-Za-z\s]+$/.test(name_2_i)) {
-        alert("Name can only contain letters and spaces!");
+        alert("Enter name correctly(letters only)");
         return;
     }
 
@@ -179,7 +179,7 @@ function sumbitt(){
 
     let dis_int_2 = dis_in.value.trim();
     if (!/^[A-Za-z\s]+$/.test(dis_int_2)) {
-        alert("Distric can only contain letters and spaces!");
+        alert("Enter distric correctly(letters only)");
         return;
     }
 
