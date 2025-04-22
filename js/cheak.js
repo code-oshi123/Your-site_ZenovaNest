@@ -39,16 +39,81 @@ let cardDetails = document.querySelectorAll(".card-info"); // Select all card fi
 function toggleCardDetails() {
         if (cashOnDelivery.checked) {
             cardDetails.forEach(el => el.style.display = "none"); // Hide card fields
-            submit.addEventListener("click" , sub_2);
+            // submit.addEventListener("click" , sub_2);
         } else if(cardPayment.checked){
             cardDetails.forEach(el => el.style.display = "block"); // Show card fields
-            submit.addEventListener("click" , sumbitt);
+            // submit.addEventListener("click" , sumbitt);
         }
-    }
+}
+
 cashOnDelivery.addEventListener("change", toggleCardDetails);
 cardPayment.addEventListener("change", toggleCardDetails);
 toggleCardDetails();
 
+function sumbit_btn_fun(e){
+    e.preventDefault();
+
+    if (cashOnDelivery.checked) {
+        sub_2();
+    } else if (cardPayment.checked) {
+        sumbitt();
+    } else {
+        alert("Please select a payment method!");
+    }
+}
+submit.addEventListener("click" , sumbit_btn_fun);
+
+phoneint.addEventListener('input', function () {
+    // Remove all non-digit characters
+    this.value = this.value.replace(/\D/g, '');
+    
+    // Enforce max 16 digits just in case
+    if (this.value.length > 10) {
+        this.value = this.value.slice(0, 10);
+    }
+    });
+      
+    cardint.addEventListener('input', function () {
+    // Remove all non-digit characters
+    this.value = this.value.replace(/\D/g, '');
+    
+    // Enforce max 16 digits just in case
+    if (this.value.length > 16) {
+        this.value = this.value.slice(0, 16);
+    }
+    });
+    
+    zipint.addEventListener('input', function () {
+        // Remove all non-digit characters
+        this.value = this.value.replace(/\D/g, '');
+      
+        // Enforce max 16 digits just in case
+        if (this.value.length > 10) {
+          this.value = this.value.slice(0, 10);
+        }
+      });
+    
+    cvcint.addEventListener('input', function () {
+        // Remove all non-digit characters
+        this.value = this.value.replace(/\D/g, '');
+      
+        // Enforce max 16 digits just in case
+        if (this.value.length > 10) {
+          this.value = this.value.slice(0, 10);
+        }
+      });
+
+// submit.addEventListener("click", function (e) {
+//     e.preventDefault();
+
+//     if (cashOnDelivery.checked) {
+//         sub_2();
+//     } else if (cardPayment.checked) {
+//         sumbitt();
+//     } else {
+//         alert("Please select a payment method!");
+//     }
+// });
 
 function sub_2(){
     let name_1 = names.value;
@@ -100,7 +165,6 @@ function sub_2(){
         // alert("Number enered sucsessful");
     }
 
-    
     alert(`Thank you, ${name_1}, for your cash on dilivary purchase! Your order will be delivered to ${add_1} on ${deliveryDate.toDateString()}.`);
     document.getElementById("myForm").submit(); 
 }
@@ -214,6 +278,12 @@ function sumbitt(){
         return;
     }else if (exYear > currantyear){
         // alert("card valid!!!!!!");
+        if (!monthNames.includes(lowermon)){
+            alert("Month spllings are wrong or invalid!!!!");
+            return;
+        }else{
+            // alert("Card is valid!!!!!!!!!!");
+        }
     }else if (exYear === currantyear){
         if (!monthNames.includes(lowermon)){
             alert("Month spllings are wrong or invalid!!!!");
@@ -226,11 +296,10 @@ function sumbitt(){
         }
     }
 
-
     alert(`Thank you, ${name_2}, for your card payment purchase! Your order will be delivered to ${add_2} on ${deliveryDate.toDateString()}.`);
-
+    document.getElementById("myForm").submit(); 
 }
-// submit.addEventListener("click" , sumbitt);
+
 
 
 
