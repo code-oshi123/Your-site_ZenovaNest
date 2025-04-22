@@ -105,20 +105,24 @@ cvcint.addEventListener('input', function () {
 
 function sub_2(){
     let name_1 = names.value;
-    if (name_1 == ""){
-        alert("enter your name!!");
-        return
+    let name_2 = names.value.trim();
+
+    if (!/^[A-Za-z\s]+$/.test(name_2)) {
+        alert("Name can only contain letters and spaces!");
+        return;
     }
+
     let add_1 = adds.value;
     if (add_1 == ""){
         alert("enter your address!!");
         return
     }
 
-    let dis_int = dis_in.value;
-    if (dis_int == ""){
-        alert("enter your distric!!");
-        return
+    let dis_int_2 = dis_in.value.trim();
+
+    if (!/^[A-Za-z\s]+$/.test(dis_int_2)) {
+        alert("Distric can only contain letters and spaces!");
+        return;
     }
 
     //phone number validation
@@ -159,20 +163,24 @@ function sub_2(){
 
 function sumbitt(){  
     let name_2 = names.value;
-    if (name_2 == ""){
-        alert("enter your name!!");
-        return
+    let name_2_i = names.value.trim();
+
+    if (!/^[A-Za-z\s]+$/.test(name_2_i)) {
+        alert("Name can only contain letters and spaces!");
+        return;
     }
+
     let add_2 = adds.value;
     if (add_2 == ""){
         alert("enter your address!!");
         return
     }
 
-    let dis_int_1 = dis_in.value;
-    if (dis_int_1 == ""){
-        alert("enter your distric!!");
-        return
+
+    let dis_int_2 = dis_in.value.trim();
+    if (!/^[A-Za-z\s]+$/.test(dis_int_2)) {
+        alert("Distric can only contain letters and spaces!");
+        return;
     }
 
     let paymentm = document.querySelector('input[name = "payment"]:checked');
