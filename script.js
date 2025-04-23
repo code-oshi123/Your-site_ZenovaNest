@@ -158,6 +158,7 @@ function loadFavoriteOrder() {
   if (favoriteOrder) {
       cart = JSON.parse(favoriteOrder);
       updateCart();
+      alert("favorite order added.");
   } else {
       alert("No favorite order found. Please save one first.");
   }
